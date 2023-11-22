@@ -475,10 +475,10 @@ a {
   /* NAVBAR */
   .navbar .navbar-box .menu {
     width: 50%;
-    height: 120px;
   }
   .navbar .dropdown {
-    left: 15px;
+    left: auto;
+    right: auto;
     height: 280px;
   }
   /* HEADER */
