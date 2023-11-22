@@ -92,3 +92,11 @@ function loaderActiveTime() {
 }
 
 window.onload = loaderActiveTime;
+
+const toggledown = document.querySelector(".toggledown");
+const dropdownbar = document.querySelector(".dropdown");
+
+toggledown.addEventListener("click", () => {
+  toggledown.classList.toggle("is-active");
+  dropdownbar.classList.toggle("is-active");
+});

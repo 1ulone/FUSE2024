@@ -17,7 +17,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Audiowide", sans-serif;
 }
 
 ul,
@@ -60,7 +60,8 @@ select,
 span,
 option,
 button {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 label {
@@ -86,7 +87,7 @@ label {
 .form_regist header span {
   font-size: 60px;
   text-shadow: rgba(250, 250, 250, 0.9) 0px 0px 37px;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Audiowide", sans-serif;
 }
 
 .form_regist .astro1,
@@ -168,6 +169,7 @@ label {
   color: white;
   transition: all 0.3s ease;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .form_regist .form .input-box button:hover {
@@ -189,11 +191,15 @@ label {
   .container {
     width: 450px;
   }
+
+  label {
+    font-size: 17px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .container {
-    width: 400px;
+    width: 340px;
   }
 
   .form_regist header {
@@ -201,11 +207,16 @@ label {
   }
 
   .form_regist header span {
-    font-size: 50px;
+    font-size: 40px;
     width: 300px;
   }
 
-  label {
-    font-size: 15px;
+  .form_regist .form .input-box input {
+    font-size: 13px;
+  }
+
+  label,
+  input {
+    font-size: 13px;
   }
 }
