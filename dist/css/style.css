@@ -844,7 +844,7 @@ a {
 @media screen and (max-width: 480px) {
   /* NAVBAR */
   .navbar .navbar-box .menu {
-    width: 40%;
+    width: 50%;
   }
 
   /* HEADER */
