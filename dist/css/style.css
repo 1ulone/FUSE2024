@@ -535,6 +535,20 @@ a {
   text-shadow: rgba(222, 188, 129, 1) 0px 0px 20px;
 }
 
+.location .location-box .box-social .cp {
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.258);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.location .location-box .box-social .cp i {
+  font-size: 25px;
+}
+
 /* FOOTER */
 .footer {
   width: 100%;

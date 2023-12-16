@@ -284,6 +284,21 @@ a {
   height: 300px;
 }
 
+/* COMING SOON */
+.soon {
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.soon h1 {
+  color: var(--color-putih);
+  font-size: 70px;
+}
+
 /* FOOTER */
 .footer {
   width: 100%;
