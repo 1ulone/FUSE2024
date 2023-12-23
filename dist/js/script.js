@@ -1,14 +1,24 @@
-const hamburger = document.querySelector(".hamburger");
-const menu = document.querySelector(".menu");
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const menu = document.querySelector(".menu");
+  const dropdown = document.querySelector(".dropdown");
+  const dropdownList = document.querySelector(".dropdown_list");
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("is-active");
-  menu.classList.toggle("menu_active");
-});
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("is-active");
+    menu.classList.toggle("menu_active");
+  });
 
-window.addEventListener("scroll", () => {
-  hamburger.classList.remove("is-active");
-  menu.classList.remove("menu_active");
+  dropdown.addEventListener("click", () => {
+    dropdown.classList.toggle("is-active");
+    dropdownList.classList.toggle("is-active");
+  });
+
+  window.addEventListener("scroll", () => {
+    hamburger.classList.remove("is-active");
+    menu.classList.remove("menu_active");
+    dropdownList.classList.remove("is-active");
+  });
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -92,11 +102,3 @@ function loaderActiveTime() {
 }
 
 window.onload = loaderActiveTime;
-
-const toggledown = document.querySelector(".toggledown");
-const dropdownbar = document.querySelector(".dropdown");
-
-toggledown.addEventListener("click", () => {
-  toggledown.classList.toggle("is-active");
-  dropdownbar.classList.toggle("is-active");
-});

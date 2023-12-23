@@ -474,12 +474,7 @@ a {
 .sponsor .sponsor-box .sponsor-box-flex img {
   border-radius: 30px;
   width: 200px;
-  opacity: 0.5;
   transition: all 0.3s ease-in-out;
-}
-
-.sponsor .sponsor-box .sponsor-box-flex img:hover {
-  opacity: 2;
 }
 
 /* LOCATION */

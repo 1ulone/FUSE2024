@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alert Toastr JS</title>
+    <!-- Toastr JS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+    />
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="toast_container">
+      <h1>Alert Toastr JS</h1>
+
+      <!--<p>Four Toast Message notifications . CLICK below buttons.</p>-->
+      <div class="btngp_container">
+        <button class="btn btn-md btn-success" id="btnSuccess">Success</button>
+        <button class="btn btn-md btn-info" id="btnInfo">Info</button>
+        <button class="btn btn-md btn-warning" id="btnWarning">Warning</button>
+        <button class="btn btn-md btn-danger" id="btnError">Error</button>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Toastr -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"
+    ></script>
+    <script>
+      //Default Toastr Notification Settings
+      $(document).ready(function () {
+        toastr.options = {
+          closeButton: false,
+          debug: false,
+          newestOnTop: false,
+          progressBar: true,
+          positionClass: "toast-top-right",
+          preventDuplicates: false,
+          onclick: null,
+          showDuration: "300",
+          hideDuration: "1000",
+          timeOut: "5000",
+          extendedTimeOut: "1000",
+          showEasing: "swing",
+          hideEasing: "linear",
+          showMethod: "fadeIn",
+          hideMethod: "fadeOut",
+        };
+      });
+
+      //Button Click Event
+      $("#btnSuccess").click(function (event) {
+        toastr.options.closeHtml =
+          '<button class="closebtn"><i class="fa-solid fa-check"></i></button>';
+        toastr.success("Pendaftaran Berhasil");
+        // alert("Success!");
+      });
+
+      $("#btnInfo").click(function (event) {
+        toastr.options.closeHtml =
+          '<button class="closebtn"><i class="fa-solid fa-circle-info"></i></button>';
+        toastr.info("ini pesan informasi");
+        //alert("Info!");
+      });
+
+      $("#btnWarning").click(function (event) {
+        toastr.options.closeHtml =
+          '<button class="closebtn"><i class="fa-solid fa-exclamation"></i></button>';
+        toastr.warning("Password Salah");
+        // alert("Warning!");
+      });
+
+      $("#btnError").click(function (event) {
+        toastr.options.closeHtml =
+          '<button class="closebtn"><i class="fa-solid fa-exclamation"></i></button>';
+        toastr.error("Pendaftaran Gagal");
+        //alert("Error!");
+      });
+    </script>
+  </body>
+</html>
