@@ -41,7 +41,7 @@ window.addEventListener("scroll", function () {
 });
 
 // Set the target date for the countdown (8 October 2024)
-const targetDate = new Date("2024-01-31T00:00:00");
+const targetDate = new Date("2024-02-03T00:00:00");
 
 function updateCountdown() {
   const currentDate = new Date();
