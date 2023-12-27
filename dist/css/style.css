@@ -295,7 +295,7 @@ a {
 }
 
 .countdown-item .number {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: bold;
 }
 
@@ -446,22 +446,13 @@ a {
   padding: 10px 10px 20px;
 }
 
-/* SPONSORSHIP */
-.sponsor {
-  width: 100%;
-  min-height: 50vh;
-  padding: 40px 0px;
+/* PARTNERSHIP */
+.partner {
+  padding: 80px 0px;
+  background-color: #000000ad;
 }
 
-.sponsor .title {
-  font-size: 80px;
-}
-
-.sponsor .sponsor-box {
-  margin: 50px auto;
-}
-
-.sponsor .sponsor-box .sponsor-box-flex {
+.partner .partner-box .partner-box-flex {
   display: flex;
   flex-wrap: wrap;
   column-gap: 60px;
@@ -471,7 +462,7 @@ a {
   margin-top: 60px;
 }
 
-.sponsor .sponsor-box .sponsor-box-flex img {
+.partner .partner-box .partner-box-flex img {
   border-radius: 30px;
   width: 200px;
   transition: all 0.3s ease-in-out;
@@ -528,20 +519,6 @@ a {
 
 .location .location-box .box:nth-child(2) li a:hover {
   text-shadow: rgba(222, 188, 129, 1) 0px 0px 20px;
-}
-
-.location .location-box .box-social .cp {
-  padding: 5px 10px;
-  background-color: rgba(255, 255, 255, 0.258);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-}
-
-.location .location-box .box-social .cp i {
-  font-size: 25px;
 }
 
 /* FOOTER */
@@ -779,6 +756,15 @@ a {
     color: white;
     font-size: 35px;
   }
+
+  /* GREETING */
+  .greet {
+    padding: 30px 0px;
+  }
+
+  .greet .greet-box h1 {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 785px) {
@@ -818,6 +804,12 @@ a {
 
   .timeline .timeline-box {
     width: 100%;
+  }
+
+  /* GREETING */
+
+  .greet .greet-box h1 {
+    font-size: 35px;
   }
 
   /* LIVE COUNT */
@@ -899,20 +891,30 @@ a {
     font-size: 10px;
   }
 
+  /* GREETING */
+
+  .greet .greet-box h1 {
+    font-size: 40px;
+  }
+
   /* TITLE */
   .title {
     font-size: 47px;
   }
 
-  .sponsor .title {
-    font-size: 35px;
+  .partner .title {
+    font-size: 30px;
+  }
+
+  .partner .partner-box .partner-box-flex img {
+    width: 150px;
   }
 
   /* PADDING ALL */
   .category,
   .timeline,
   .faq,
-  .sponsor,
+  .partner,
   .location {
     padding: 80px 0px auto;
   }

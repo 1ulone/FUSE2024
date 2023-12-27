@@ -157,6 +157,18 @@ label {
 
 .form_regist .form .input-box input[type="file"] {
   padding: 10px 15px;
+  border: none;
+}
+
+input[type="file"]::file-selector-button {
+  border: 1px solid black;
+  outline: none;
+  background: var(--color-hitam);
+  color: var(--color-putih);
+  padding: 7px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
 }
 
 .form_regist .form .column {

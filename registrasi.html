@@ -14,6 +14,12 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <!-- Toastr JS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+    />
 
     <!-- TIMELINE CSS -->
     <link rel="stylesheet" href="dist/css/timeline.css" />
@@ -32,7 +38,6 @@
     <!-- particles.js container -->
     <div id="particles-js"></div>
 
-    <!-- FORM REGISTRATION -->
     <!-- FORM REGISTRATION -->
     <div class="form_regist">
       <div class="container">
@@ -170,23 +175,19 @@
             <input type="file" id="twibbon" required />
           </div>
 
-          <div class="column">
-            <div class="input-box">
-              <label for="photo"
-                >Foto 3x4 <span>( Jadikan 1 PDF ) *</span></label
-              >
-              <input type="file" id="photo" required />
-            </div>
-            <div class="input-box">
-              <label for="payment-proof"
-                >Bukti pembayaran <span>( Jadikan 1 PDF ) *</span></label
-              >
-              <input type="file" id="payment-proof" required />
-            </div>
+          <div class="input-box">
+            <label for="photo">Foto 3x4 <span>( Jadikan 1 PDF ) *</span></label>
+            <input type="file" id="photo" required />
+          </div>
+          <div class="input-box">
+            <label for="payment-proof"
+              >Bukti pembayaran <span>( Jadikan 1 PDF ) *</span></label
+            >
+            <input type="file" id="payment-proof" required />
           </div>
 
           <div class="input-box">
-            <button type="submit" name="submit">Submit</button>
+            <button id="btnSuccess">Submit</button>
           </div>
         </form>
       </div>
@@ -238,6 +239,41 @@
     </div>
 
     <!-- scripts -->
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Toastr -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"
+    ></script>
+    <script>
+      //Default Toastr Notification Settings
+      $(document).ready(function () {
+        toastr.options = {
+          closeButton: false,
+          debug: false,
+          newestOnTop: false,
+          progressBar: true,
+          positionClass: "toast-top-right",
+          preventDuplicates: false,
+          onclick: null,
+          showDuration: "300",
+          hideDuration: "1000",
+          timeOut: "5000",
+          extendedTimeOut: "1000",
+          showEasing: "swing",
+          hideEasing: "linear",
+          showMethod: "fadeIn",
+          hideMethod: "fadeOut",
+        };
+      });
+
+      //Button Click Event
+      $("#btnSuccess").click(function (event) {
+        toastr.success("Pendaftaran Berhasil");
+        // alert("Success!");
+      });
+    </script>
     <script src="dist/js/particles.js"></script>
     <script src="dist/js/app.js"></script>
     <script src="dist/js/script.js"></script>
