@@ -23,6 +23,10 @@
   position: absolute;
 }
 
+.timeline .item {
+  width: 480px;
+}
+
 .left-box .item {
   margin-right: 100px;
 }
@@ -96,6 +100,7 @@
 
   .timeline .item {
     width: 380px;
+    margin-bottom: 50px;
   }
 
   .timeline .timeline-box {
@@ -120,6 +125,6 @@
 
 @media screen and (max-width: 480px) {
   .timeline .item {
-    width: 320px;
+    width: 300px;
   }
 }
