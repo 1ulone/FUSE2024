@@ -220,6 +220,19 @@ a {
   font-size: 20px;
 }
 
+.header .header-box .box:nth-child(2) .link {
+  margin-bottom: 30px;
+}
+
+.header .header-box .box:nth-child(2) .biaya {
+  background: none;
+  border: 3px solid rgba(164, 164, 164, 0.357);
+}
+
+.header .header-box .box:nth-child(2) .biaya:hover {
+  box-shadow: none;
+}
+
 .header .header-box .box:nth-child(2) a {
   margin-right: 10px;
   padding: 10px;
