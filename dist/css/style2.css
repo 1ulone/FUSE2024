@@ -221,7 +221,7 @@ a {
 }
 
 .header .header-box .box:nth-child(2) .link {
-  margin-bottom: 30px;
+  margin: 35px auto;
 }
 
 .header .header-box .box:nth-child(2) .biaya {
